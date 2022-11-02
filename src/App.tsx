@@ -19,6 +19,9 @@ function App() {
           <code>src/App.tsx</code>
           and save to test HMR
         </p>
+        <button type="button">
+          new button
+        </button>
       </div>
       <p className="read-the-docs">Click on the Vite and React logos to learn more</p>
       <div className={`${count}`}> </div>
