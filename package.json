@@ -9,7 +9,11 @@
     "preview": "vite preview",
     "lint": "eslint src/**/*.{js,jsx,ts,tsx,json}",
     "lint:fix": "eslint --fix 'src/**/*.{js,jsx,ts,tsx,json}'",
-    "format": "prettier --write 'src/**/*.{js,jsx,ts,tsx,css,md,json}' --config ./.prettierrc"
+    "format": "prettier --write 'src/**/*.{js,jsx,ts,tsx,css,scss,md,json}' --config ./.prettierrc",
+    "style": "stylelint src/**/*.{css,scss,.module.scss}",
+    "style:fix": "stylelint --fix src/**/*.{css,scss,.module.scss}",
+    "lintstyle": "concurrently \"npm run lint\" \"npm run style\"",
+    "lintstyle:fix": "concurrently \"npm run lint:fix\" \"npm run style:fix\""
   },
   "dependencies": {
     "@reduxjs/toolkit": "^1.8.6",
@@ -28,6 +32,7 @@
     "@typescript-eslint/parser": "^5.42.0",
     "@vitejs/plugin-react": "^2.2.0",
     "classnames": "^2.3.2",
+    "concurrently": "^7.5.0",
     "eslint": "^8.26.0",
     "eslint-config-airbnb": "^19.0.4",
     "eslint-config-airbnb-typescript": "^17.0.0",
@@ -38,6 +43,10 @@
     "eslint-plugin-react": "^7.31.10",
     "eslint-plugin-react-hooks": "^4.6.0",
     "prettier": "^2.7.1",
+    "stylelint": "^14.14.0",
+    "stylelint-config-prettier-scss": "^0.0.1",
+    "stylelint-config-recess-order": "^3.0.0",
+    "stylelint-config-standard-scss": "^6.0.0",
     "typescript": "^4.6.4",
     "vite": "^3.2.0"
   }
