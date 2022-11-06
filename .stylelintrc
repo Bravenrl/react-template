@@ -4,7 +4,7 @@
     "stylelint-config-recess-order",
     "stylelint-config-prettier-scss"
   ],
-  "ignoreFiles": ["**/*.js", "**/*.ts", "**/*.jsx", "**/*.tsx", "**/*.svg", "**/*.html"],
+  "ignoreFiles": ["**/*.js", "**/*.ts", "**/*.jsx", "**/*.tsx", "**/*.svg", "**/*.html", "templates/**/*.scss"],
   "rules": {
     "scss/at-rule-no-unknown": true,
     "number-leading-zero": null,
@@ -83,6 +83,7 @@
     "selector-type-case": "lower",
     "selector-type-no-unknown": true,
     "selector-max-empty-lines": 0,
+    "selector-class-pattern": null,
 
     "selector-list-comma-newline-after": "always",
     "selector-list-comma-newline-before": "never-multi-line",
